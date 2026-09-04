@@ -11,6 +11,21 @@ body {
 	line-height: 1.5;
 }
 
+.site-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0.75rem 1rem;
+	background: #25211c;
+}
+
+.site-logo {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .slideshow {
 	display: flex;
 	align-items: center;
