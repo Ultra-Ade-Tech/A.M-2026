@@ -23,37 +23,58 @@
     <h2>Monsurat Omolara, adeleke biography.</h2>
     <h3>My Mother needed a bachelors degree. She started by being a midwifr in Nigeria, then proceeded to obtain her bachelors degree in  nursing in the Philippines . She worked for 3 years as a RM before leaving Philippines and moved to the USA to studie as a nurse after passing her NCLEX board exams. She needed to be eligeble to enrol for the NP program, she needed to aplly for a different University. She had differnt NP programs such as:pmhnp, pnp,cnm,agaenp,and fnp. she had so many choices  but she decided to go with pmhnp. She chose that route because she enjoyed Psychiatry, it's her passion to help people with mental problems. The program was 2 and a half years full time. It includes lots of training, assignments, reading, exams, and practicum. She needed to complete many board exams to become certified. Candidates got to choose tounite with ANCC or ANPP. she choose ANCC and passed on her first try! She became a board certified PMHNP!
     </h3>
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        const previousButton = document.querySelector('.previous');
-        const nextButton = document.querySelector('.next');
-        const dotsContainer = document.querySelector('.slide-dots');
-        let currentSlide = 0;
+   <script>
+    const slides = document.querySelectorAll(".slide");
+    const previousButton = document.querySelector(".previous");
+    const nextButton = document.querySelector(".next");
+    const dotsContainer = document.querySelector(".slide-dots");
 
-        slides.forEach((slide, slideIndex) => {
-            const dot = document.createElement('button');
-            dot.type = 'button';
-            dot.className = 'slide-dot';
-            dot.setAttribute('aria-label', `Show image ${slideIndex + 1}`);
-            dot.addEventListener('click', () => showSlide(slideIndex));
-            dotsContainer.appendChild(dot);
+    let currentSlide = 0;
+
+    slides.forEach((slide, slideIndex) => {
+        const dot = document.createElement("button");
+
+        dot.type = "button";
+        dot.className = "slide-dot";
+        dot.setAttribute("aria-label", `Show image ${slideIndex + 1}`);
+
+        dot.addEventListener("click", () => {
+            showSlide(slideIndex);
         });
 
-        function showSlide(index) {
-            currentSlide = (index + slides.length) % slides.length;
-            slides.forEach((slide, slideIndex) => {
-                slide.classList.toggle('active', slideIndex === currentSlide);
-            });
-            dotsContainer.querySelectorAll('.slide-dot').forEach((dot, dotIndex) => {
-                dot.classList.toggle('active', dotIndex === currentSlide);
-            });
-        }
+        dotsContainer.appendChild(dot);
+    });
 
-        previousButton.addEventListener('click', () => showSlide(currentSlide - 1));
-        nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
-        showSlide(0);
-    </script>
+    function showSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
 
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle(
+                "active",
+                slideIndex === currentSlide
+            );
+        });
+
+        dotsContainer
+            .querySelectorAll(".slide-dot")
+            .forEach((dot, dotIndex) => {
+                dot.classList.toggle(
+                    "active",
+                    dotIndex === currentSlide
+                );
+            });
+    }
+
+    previousButton.addEventListener("click", () => {
+        showSlide(currentSlide - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+        showSlide(currentSlide + 1);
+    });
+
+    showSlide(0);
+</script>
     
     
 
