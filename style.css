@@ -36,6 +36,20 @@ body {
 	text-decoration: none;
 }
 
+.header-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: clamp(2rem, 6vw, 4.5rem);
+	line-height: 1.05;
+	text-align: center;
+	text-shadow: 2px 2px 5px #000;
+}
+
 .slideshow {
 	display: flex;
 	align-items: center;
