@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.M 2026</title>
-    <link rel="stylesheet" href="style.css?v=20260904">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="site-header">
-        <img src="Get the W.png" alt="">
-        <a class="site-logo" href="index.html" aria-label="A.M 2026 home">A.M 2026</a>
+        <img src="Get the W.png" alt="Graduation banner">
+        <a class="site-logo" href="index.html">A.M 2026</a>
         <h1 class="header-title">The power of<br>perseverance</h1>
     </header>
+
     <section class="slideshow" aria-label="Photos from Monsurat Omolara's story">
         <button class="slide-arrow previous" type="button" aria-label="Previous image">&#8592;</button>
         <div class="slides">
-            <img class="slide active" src="Black and white.jpg" alt="">
-            <img class="slide" src="family.jpg" alt="">
-            <img class="slide" src="heel.jpg" alt="">
-            <img class="slide" src="hello.jpg" alt="">
-            <img class="slide" src="flower.jpg" alt="">
+            <img class="slide active" src="Black and white.jpg" alt="Slide 1">
+            <img class="slide" src="family.jpg" alt="Slide 2">
+            <img class="slide" src="heel.jpg" alt="Slide 3">
+            <img class="slide" src="hello.jpg" alt="Slide 4">
+            <img class="slide" src="flower.jpg" alt="Slide 5">
         </div>
         <button class="slide-arrow next" type="button" aria-label="Next image">&#8594;</button>
     </section>
-    <h2>Monsurat Omolara, adeleke biography.</h2>
-    <h3>My Mother needed a bachelors degree. She started by being a midwife in Nigeria, then proceeded to obtain her bachelors degree in  nursing in the Philippines . She worked for 3 years as a RM before leaving Philippines and moved to the USA to studie as a nurse after passing her NCLEX board exams. She needed to be eligeble to enrol for the NP program, she needed to aplly for a different University. She had differnt NP programs such as:pmhnp, pnp,cnm,agaenp,and fnp. she had so many choices  but she decided to go with pmhnp. She chose that route because she enjoyed Psychiatry, it's her passion to help people with mental problems. The program was 2 and a half years full time. It includes lots of training, assignments, reading, exams, and practicum. She needed to complete many board exams to become certified. Candidates got to choose tounite with ANCC or ANPP. she choose ANCC and passed on her first try! She became a board certified PMHNP!
-    </h3>
+
+    <main>
+        <h2>Monsurat Omolara, adeleke biography.</h2>
+        <h3>
+            My Mother needed a bachelors degree. She started by being a midwife in Nigeria, then proceeded to obtain her bachelors degree in nursing in the Philippines. She worked for 3 years as a RM before leaving Philippines and moved to the USA to study as a nurse after passing her NCLEX board exams. She needed to be eligible to enrol for the NP program, she needed to apply for a different University. She had different NP programs such as: pmhnp, pnp, cnm, agaenp, and fnp. She had so many choices but she decided to go with pmhnp. She chose that route because she enjoyed Psychiatry, it's her passion to help people with mental problems. The program was 2 and a half years full time. It includes lots of training, assignments, reading, exams, and practicum. She needed to complete many board exams to become certified. Candidates got to choose to unite with ANCC or ANPP. She chose ANCC and passed on her first try! She became a board certified PMHNP!
+        </h3>
+    </main>
+
+    <nav class="page-nav" aria-label="Page navigation">
+        <span class="page-btn disabled">← Previous</span>
+        <div class="page-dots">
+            <a href="index.html" class="active" aria-current="page">1</a>
+            <a href="hobbies.html">2</a>
+            <a href="family.html">3</a>
+            <a href="tribute.html">4</a>
+        </div>
+        <a class="page-btn next" href="hobbies.html">Next →</a>
+    </nav>
+    <p class="page-label">Page 1 of 4 — Biography</p>
+
     <script>
         const slides = document.querySelectorAll('.slide');
         const previousButton = document.querySelector('.previous');
@@ -43,13 +62,5 @@
         nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
     </script>
 
-    
-    
-
-    
-
-
-    
-    
 </body>
 </html>

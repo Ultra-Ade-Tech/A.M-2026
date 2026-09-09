@@ -153,3 +153,63 @@ h3 {
 		height: 2.5rem;
 	}
 }
+
+.page-nav {
+  width: min(100%, 900px);
+  margin: 3rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 2px solid #25211c;
+  font-family: Georgia, serif;
+}
+
+.page-nav .page-btn {
+  background: #25211c;
+  color: #f7f3ea;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.page-nav .page-btn:hover {
+  background: #9a5b39;
+  transform: translateY(-2px);
+}
+
+.page-nav .page-btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.page-dots {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.page-dots a {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #25211c;
+  text-decoration: none;
+  color: #25211c;
+  font-weight: bold;
+}
+
+.page-dots a.active {
+  background: #25211c;
+  color: #f7f3ea;
+}
+
+.page-label {
+  font-style: italic;
+  color: #9a5b39;
+}
